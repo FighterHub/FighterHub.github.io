@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Color Admin | Form Elements</title>
+	<title>פייטר האב - צור אירוע</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -219,7 +219,7 @@
 								</a>
 							</div>
 							<div class="menu-item">
-								<a href="ai_image_generator.html" class="menu-link">
+								<a href="create_event.html" class="menu-link">
 									<div class="menu-text">צור אירוע</div>
 								</a>
 							</div>
@@ -316,19 +316,33 @@
 								<input type="text" class="form-control" placeholder="הכנס שם אירוע" required />
 							</div>
 						</div>
+						<!-- ... existing code ... -->
 						<div class="row mb-15px">
-							<label class="form-label col-form-label col-md-3">שם המתחם *</label>
+							<label class="form-label col-form-label col-md-3">מיקום *</label>
 							<div class="col-md-9">
-								<input type="text" class="form-control" placeholder="הכנס שם מתחם" required />
+								<div class="row">
+									<div class="col-md-11">
+										<select class="form-select" required>
+											<option>בחר</option>
+											<option value="avtalion" selected>אבטליון ג'ים (המסגר 5 נס ציונה)</option>
+										</select>
+									</div>
+									<div class="col-md-1">
+										<button type="button" class="btn btn-primary w-100">
+											הוסף
+										</button>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="row mb-15px">
+						<!-- ... existing code ... -->
+						<!-- <div class="row mb-15px">
 							<label class="form-label col-form-label col-md-3">כתובת *</label>
 							<div class="col-md-9">
 								<textarea class="form-control" rows="3" placeholder="הכנס כתובת מלאה"
 									required></textarea>
 							</div>
-						</div>
+						</div> -->
 						<div class="row mb-15px">
 							<label class="form-label col-form-label col-md-3">תאריך ושעה *</label>
 							<div class="col-md-9">
