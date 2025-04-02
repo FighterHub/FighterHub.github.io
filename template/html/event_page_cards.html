@@ -16,6 +16,19 @@
 		html {
 			font-size: 18px;
 		}
+
+		.panel .panel-body {
+			padding: .3500rem .3500rem
+		}
+
+		.card {
+			--bs-card-spacer-x: 0.3500rem;
+		}
+
+		.app-content {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	</style>
 	<!-- ================== END core-css ================== -->
 </head>
@@ -296,7 +309,7 @@
 								<div class="mb-2 fight-card" data-fight-id="1">
 
 
-									<div class="card cursor-move">
+									<div class="card cursor-move bg-gray-100">
 										<div class="card-body py-2">
 											<div class="d-flex align-items-center">
 												<span class="badge bg-primary me-2 fight-number">קרב 1</span>
@@ -305,9 +318,10 @@
 											</div>
 											<hr class="my-2">
 											<div class="d-flex align-items-center">
+
 												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
-													<img src="../assets/img/user/user-1.jpg" alt=""
-														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-1.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" /> -->
 													<div class="">
 														<h6 class="mb-0 text-truncate">איתי אפרת</h6>
 														<small class="text-muted text-truncate">מכון אבטליון</small>
@@ -315,42 +329,13 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-success d-inline-block"><i
-																		class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
+																<span
+																	class="text-success d-inline-block text-decoration-hover-underline"><i
+																		class="fas fa-check"></i> אישורים התקבלו
+																</span>
+
 															</button>
-															<div class="modal fade" id="documentsModal1" tabindex="-1">
-																<div class="modal-dialog">
-																	<div class="modal-content">
-																		<div class="modal-header">
-																			<h5 class="modal-title">מסמכים - איתי אפרת
-																			</h5>
-																			<button type="button" class="btn-close"
-																				data-bs-dismiss="modal"></button>
-																		</div>
-																		<div class="modal-body">
-																			<ul>
-																				<li>
-																					<span class="text-success d-inline-block"><i
-																						class="fas fa-check"></i> 
-																					אישור ביטוחי																					
-																				</li>
-																				<li>
-																					<span class="text-success d-inline-block"><i
-																						class="fas fa-check"></i> 
-																					חתימת מאמן
-																					
-																				</li>
-																				<li>
-																					<span class="text-success d-inline-block"><i
-																						class="fas fa-check"></i> 
-																					אישור הורים
-																					
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																</div>
-															</div>
+
 														</div>
 													</div>
 												</div>
@@ -366,44 +351,55 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-success d-inline-block text-decoration-hover-underline"><i class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
-																
+																<span
+																	class="text-success d-inline-block text-decoration-hover-underline"><i
+																		class="fas fa-check"></i> אישורים התקבלו
+																</span>
+
 															</button>
 														</div>
 													</div>
-													<img src="../assets/img/user/user-2.jpg" alt=""
-														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-2.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" /> -->
 												</div>
 											</div>
 											<hr class="my-2">
-											<div class="d-flex justify-content-end gap-1">									
-												
-												<button class="btn btn-danger btn-xs" data-bs-toggle="modal" data-bs-target="#cancelFightModal"><i
-														class="fas fa-times"></i> בטל קרב </button>
+											<div class="d-flex justify-content-end gap-1">
+
+												<button class="btn btn-danger btn-xs" data-bs-toggle="modal"
+													data-bs-target="#cancelFightModal"><i class="fas fa-times"></i> בטל
+													קרב </button>
 
 												<!-- Cancel Fight Modal -->
-												<div class="modal fade" id="cancelFightModal" tabindex="-1" aria-labelledby="cancelFightModalLabel" aria-hidden="true">
+												<div class="modal fade" id="cancelFightModal" tabindex="-1"
+													aria-labelledby="cancelFightModalLabel" aria-hidden="true">
 													<div class="modal-dialog">
 														<div class="modal-content">
 															<div class="modal-header">
-																<h5 class="modal-title" id="cancelFightModalLabel">ביטול קרב</h5>
-																<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+																<h5 class="modal-title" id="cancelFightModalLabel">ביטול
+																	קרב</h5>
+																<button type="button" class="btn-close"
+																	data-bs-dismiss="modal" aria-label="Close"></button>
 															</div>
 															<div class="modal-body">
 																<p>הודעה תישלח למתאגרפים ולמאמנים עם סיבת הביטול.</p>
 																<div class="mb-3">
-																	<label for="cancelReason" class="form-label">סיבת הביטול:</label>
-																	<textarea class="form-control" id="cancelReason" rows="3" required></textarea>
+																	<label for="cancelReason" class="form-label">סיבת
+																		הביטול:</label>
+																	<textarea class="form-control" id="cancelReason"
+																		rows="3" required></textarea>
 																</div>
 															</div>
 															<div class="modal-footer">
-																<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">הפסק ביטול</button>
-																<button type="button" class="btn btn-danger">המשך בביטול הקרב</button>
+																<button type="button" class="btn btn-secondary"
+																	data-bs-dismiss="modal">הפסק ביטול</button>
+																<button type="button" class="btn btn-danger">המשך בביטול
+																	הקרב</button>
 															</div>
 														</div>
 													</div>
 												</div>
-										
+
 											</div>
 										</div>
 
@@ -413,7 +409,7 @@
 
 								<!-- Fight Card 2 -->
 								<div class="mb-2 fight-card pt-4" data-fight-id="2">
-									<div class="card cursor-move">
+									<div class="card cursor-move bg-gray-100">
 										<div class="card-body py-2">
 											<div class="d-flex align-items-center">
 												<span class="badge bg-primary me-2 fight-number">קרב 2</span>
@@ -423,8 +419,8 @@
 											<hr class="my-2">
 											<div class="d-flex align-items-center">
 												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
-													<img src="../assets/img/user/user-3.jpg" alt=""
-														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-3.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" /> -->
 													<div class="text-truncate">
 														<h6 class="mb-0 text-truncate">אופיר פלד</h6>
 														<small class="text-muted text-truncate">מכון אבטליון</small>
@@ -432,8 +428,10 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-success d-inline-block"><i
-																		class="fas fa-check"></i> מסמכים ואישורים נשלחו</span>
+																<span
+																	class="text-success d-inline-block text-decoration-hover-underline"><i
+																		class="fas fa-check"></i> אישורים התקבלו
+																</span>
 															</button>
 														</div>
 													</div>
@@ -451,20 +449,21 @@
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
 																<span class="text-success d-inline-block"><i
-																		class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
+																		class="fas fa-check"></i> אישורים התקבלו
+																</span>
 															</button>
 														</div>
 													</div>
-													<img src="../assets/img/user/user-4.jpg" alt=""
-														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-4.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" /> -->
 												</div>
 											</div>
 											<hr class="my-2">
 											<div class="d-flex justify-content-end gap-1">
-												<button class="btn btn-success btn-xs"><i
-														class="fas fa-check"></i> אשר קרב</button>
-												<button class="btn btn-danger btn-xs"><i
-														class="fas fa-times"></i> דחה קרב</button>		
+												<button class="btn btn-success btn-xs"><i class="fas fa-check"></i> אשר
+													קרב</button>
+												<button class="btn btn-danger btn-xs"><i class="fas fa-times"></i> דחה
+													קרב</button>
 											</div>
 										</div>
 									</div>
@@ -472,7 +471,7 @@
 
 								<!-- Fight Card 3 -->
 								<div class="mb-2 fight-card pt-4" data-fight-id="3">
-									<div class="card cursor-move">
+									<div class="card cursor-move bg-gray-100">
 										<div class="card-body py-2">
 											<div class="d-flex align-items-center">
 												<span class="badge bg-primary me-2 fight-number">קרב 3</span>
@@ -482,8 +481,8 @@
 											<hr class="my-2">
 											<div class="d-flex align-items-center">
 												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
-													<img src="../assets/img/user/user-5.jpg" alt=""
-														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-5.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" /> -->
 													<div class="text-truncate">
 														<h6 class="mb-0 text-truncate">רז אביב</h6>
 														<small class="text-muted text-truncate">מכון אבטליון</small>
@@ -491,8 +490,8 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-danger d-inline-block"><i
-																		class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+																<span class="text-danger d-inline-block"><i class="fas fa-triangle-exclamation"></i> אישורים חסרים</span>
+																</span>
 															</button>
 														</div>
 													</div>
@@ -509,26 +508,28 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-success d-inline-block"><i
-																		class="fas fa-check"></i> מסמכים ואישורים נשלחו</span>
+																<span
+																	class="text-success d-inline-block text-decoration-hover-underline"><i
+																		class="fas fa-check"></i> אישורים התקבלו
+																</span>
 															</button>
 														</div>
 													</div>
-													<img src="../assets/img/user/user-6.jpg" alt=""
-														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-6.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" /> -->
 												</div>
 											</div>
 											<hr class="my-2">
 											<div class="d-flex justify-content-end gap-1">
-												
+
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<!-- Fight Card 4 -->
-								<div class="mb-2 fight-card pt-4" data-fight-id="4">
-									<div class="card cursor-move">
+								<div class="mb-2 fight-card pt-4 " data-fight-id="4">
+									<div class="card cursor-move bg-gray-100">
 										<div class="card-body py-2">
 											<div class="d-flex align-items-center">
 												<span class="badge bg-primary me-2 fight-number">קרב 4</span>
@@ -538,8 +539,8 @@
 											<hr class="my-2">
 											<div class="d-flex align-items-center">
 												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
-													<img src="../assets/img/user/user-7.jpg" alt=""
-														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-7.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" /> -->
 													<div class="text-truncate">
 														<h6 class="mb-0 text-truncate">יוסי לוי</h6>
 														<small class="text-muted text-truncate">מכון אבטליון</small>
@@ -547,8 +548,8 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-danger d-inline-block"><i
-																	class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+																<span class="text-danger d-inline-block"><i class="fas fa-triangle-exclamation"></i> אישורים חסרים</span>
+																</span>
 															</button>
 														</div>
 													</div>
@@ -565,21 +566,20 @@
 															<button type="button" class="btn btn-link btn-xs p-0"
 																data-bs-toggle="modal"
 																data-bs-target="#documentsModal1">
-																<span class="text-danger d-inline-block"><i
-																	class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+																<span class="text-danger d-inline-block"><i class="fas fa-triangle-exclamation"></i> אישורים חסרים</span>
 															</button>
 														</div>
 													</div>
-													<img src="../assets/img/user/user-8.jpg" alt=""
-														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+													<!-- <img src="../assets/img/user/user-8.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" /> -->
 												</div>
 											</div>
 											<hr class="my-2">
 											<div class="d-flex justify-content-end gap-1">
-												<button class="btn btn-success btn-xs"><i
-														class="fas fa-envelope"></i> שלח תזכורת</button>
-												<button class="btn btn-danger btn-xs"><i
-														class="fas fa-times"></i> דחה קרב</button>		
+												<button class="btn btn-success btn-xs"><i class="fas fa-envelope"></i>
+													שלח תזכורת</button>
+												<button class="btn btn-danger btn-xs"><i class="fas fa-times"></i> דחה
+													קרב</button>
 											</div>
 										</div>
 									</div>
@@ -590,7 +590,35 @@
 				</div>
 			</div>
 			<!-- END fights panel -->
+			<div class="modal fade" id="documentsModal1" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">מסמכים - איתי אפרת
+							</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						</div>
+						<div class="modal-body">
+							<ul>
+								<li>
+									<span class="text-success d-inline-block"><i class="fas fa-check"></i>
+										אישור ביטוחי
+								</li>
+								<li>
+									<span class="text-success d-inline-block"><i class="fas fa-check"></i>
+										חתימת מאמן
 
+								</li>
+								<li>
+									<span class="text-success d-inline-block"><i class="fas fa-check"></i>
+										אישור הורים
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 		<!-- END #content -->
