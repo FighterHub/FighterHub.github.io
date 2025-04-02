@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Color Admin | Wizards</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- ================== BEGIN core-css ================== -->
+	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+	<link href="../assets/css/default/app-rtl.min.css" rel="stylesheet" />
+	<!-- ================== END core-css ================== -->
+</head>
+
+<body>
+	<!-- BEGIN #loader -->
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
+	<!-- END #loader -->
+
+	<!-- BEGIN #app -->
+	<div id="app" class="app app-header-fixed app-sidebar-fixed">
+		<!-- BEGIN #header -->
+
+		<div id="header" class="app-header">
+			<!-- BEGIN navbar-header -->
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">
+
+					<img src="../assets/img/fh.png" />&nbsp;
+					<b class="me-3px">FighterHub</b></a>
+				<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- END navbar-header -->
+			<!-- BEGIN header-nav -->
+			<div class="navbar-nav">
+				<div class="navbar-item navbar-form">
+
+				</div>
+
+				<div class="navbar-item navbar-user dropdown">
+					<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center"
+						data-bs-toggle="dropdown"></a>
+				</div>
+			</div>
+			<!-- END header-nav -->
+		</div>
+		<!-- END #header -->
+
+
+
+		<!-- BEGIN #content -->
+		<div id="content" class="app-content p-0 m-20px">
+
+			<!-- BEGIN page-header -->
+			<h1 class="page-header">הרשמה <small>header small text goes here...</small></h1>
+			<!-- END page-header -->
+
+
+			<!-- BEGIN row -->
+			<div class="row">
+				<!-- BEGIN col-6 -->
+				<div class="col-xl-12">
+					<!-- BEGIN panel -->
+					<div class="panel panel-inverse">
+
+						<div class="panel-body">
+
+							<div class="nav-wizards">
+								<nav class="nav nav-wizards-3 mb-2">
+									<div class="nav-item col">
+										<a class="nav-link completed" href="#">
+											<div class="nav-dot"></div>
+											<div class="nav-title">פרטים אישיים</div>
+
+										</a>
+									</div>
+									<div class="nav-item col">
+										<a class="nav-link active" href="#">
+											<div class="nav-dot"></div>
+											<div class="nav-title">פרטי מתחרה</div>
+										</a>
+									</div>
+									<div class="nav-item col">
+										<a class="nav-link disabled" href="#">
+											<div class="nav-dot"></div>
+											<div class="nav-title">אישור הרשמה</div>
+											<!-- <div class="nav-text">Active step</div> -->
+										</a>
+									</div>
+									<!-- <div class="nav-item col">
+										<a class="nav-link disabled" href="#">
+											<div class="nav-dot"></div>
+											<div class="nav-title">Step 4</div>
+											<div class="nav-text">Disabled step</div>
+										</a>
+									</div>
+									<div class="nav-item col">
+										<a class="nav-link disabled" href="#">
+											<div class="nav-dot"></div>
+											<div class="nav-title">Step 5</div>
+											<div class="nav-text">Last step</div>
+										</a>
+									</div> -->
+								</nav>
+							</div>
+							<div class="card">
+								<form>
+
+
+									<div class="card-body form-wizard-target-1">
+										<div class="row mb-3">
+											<div class="col-md-4">
+												<div class="mb-3">
+													<label class="form-label">שם פרטי</label>
+													<input type="text" class="form-control form-control-lg"
+														placeholder="הכנס שם פרטי">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="mb-3">
+													<label class="form-label">שם משפחה</label>
+													<input type="text" class="form-control form-control-lg"
+														placeholder="הכנס שם משפחה">
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="mb-3">
+													<label class="form-label">תאריך לידה</label>
+													<input type="date" class="form-control form-control-lg">
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="mb-3">
+											<label class="form-label d-block">מין</label>
+											<div class="row">
+												<div class="col-6">
+													<div class="card p-3 cursor-pointer" onclick="selectGender('male')"
+														id="maleCard">
+														<div class="text-center">
+															<i class="fas fa-mars fa-3x mb-2"></i>
+															<div>זכר</div>
+														</div>
+														<input type="radio" name="gender" value="male" class="d-none"
+															id="maleInput">
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="card p-3 cursor-pointer"
+														onclick="selectGender('female')" id="femaleCard">
+														<div class="text-center">
+															<i class="fas fa-venus fa-3x mb-2"></i>
+															<div>נקבה</div>
+														</div>
+														<input type="radio" name="gender" value="female" class="d-none"
+															id="femaleInput">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<style>
+											.selected-gender {
+												background-color: #e9ecef;
+												border: 2px solid #0d6efd;
+											}
+										</style>
+
+										<script>
+											function selectGender(gender) {
+												// Remove selected class from both cards
+												document.getElementById('maleCard').classList.remove('selected-gender');
+												document.getElementById('femaleCard').classList.remove('selected-gender');
+
+												// Add selected class to clicked card
+												document.getElementById(gender + 'Card').classList.add('selected-gender');
+
+												// Check the radio input
+												document.getElementById(gender + 'Input').checked = true;
+											}
+										</script>
+
+									</div>
+
+
+									<div class="card-body form-wizard-target-2">
+										<div class="mb-3">
+											<label class="form-label">סוגי קרבות שמעניינות אותך</label>
+											<div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="muay_thai"
+														name="fightCategory" value="muay_thai">
+													<label class="form-check-label" for="muay_thai">איגרוף
+														תאילנדי</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="k1"
+														name="fightCategory" value="k1">
+													<label class="form-check-label" for="k1">K1</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="mma"
+														name="fightCategory" value="mma">
+													<label class="form-check-label" for="mma">MMA</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="boxing"
+														name="fightCategory" value="boxing">
+													<label class="form-check-label" for="boxing">איגרוף</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="kickboxing"
+														name="fightCategory" value="kickboxing">
+													<label class="form-check-label" for="kickboxing">קיק בוקסינג</label>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="mb-3">
+
+											<label class="form-label">קטגוריית משקל</label>
+
+											<div class="weight-class-checkboxes">
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="flyweight">משקל זבוב (עד 57
+														ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="flyweight"
+														name="weightClass" value="flyweight">
+
+												</div>
+												<div class="form-check form-check-inline">
+													<input class="form-check-input" type="checkbox" id="bantamweight"
+														name="weightClass" value="bantamweight">
+													<label class="form-check-label" for="bantamweight">משקל נוצה (עד 61
+														ק"ג)</label>
+
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="featherweight">משקל קל נוצה (עד
+														66 ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="featherweight"
+														name="weightClass" value="featherweight">
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="lightweight">משקל קל (עד 70
+														ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="lightweight"
+														name="weightClass" value="lightweight">
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="welterweight">משקל בינוני קל
+														(עד 77 ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="welterweight"
+														name="weightClass" value="welterweight">
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="middleweight">משקל בינוני (עד
+														84 ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="middleweight"
+														name="weightClass" value="middleweight">
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="light_heavyweight">משקל כבד
+														למחצה (עד 93 ק"ג)</label>
+													<input class="form-check-input" type="checkbox"
+														id="light_heavyweight" name="weightClass"
+														value="light_heavyweight">
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label" for="heavyweight">משקל כבד (מעל 93
+														ק"ג)</label>
+													<input class="form-check-input" type="checkbox" id="heavyweight"
+														name="weightClass" value="heavyweight">
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+
+
+								</form>
+							</div>
+						</div>
+
+					</div>
+					<!-- END panel -->
+				</div>
+				<!-- END col-6 -->
+
+				
+			</div>
+			<!-- END row -->
+		</div>
+		<!-- END #content -->
+
+
+	</div>
+	<!-- END #app -->
+
+	<!-- ================== BEGIN core-js ================== -->
+	<script src="../assets/js/vendor.min.js"></script>
+	<script src="../assets/js/app.min.js"></script>
+	<!-- ================== END core-js ================== -->
+
+	<!-- ================== BEGIN page-js ================== -->
+	<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<script src="../assets/js/demo/render.highlight.js"></script>
+	<!-- ================== END page-js ================== -->
+</body>
+
+</html>
