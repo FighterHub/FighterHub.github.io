@@ -272,13 +272,197 @@
 		<!-- END #sidebar -->
 
 		<!-- BEGIN #content -->
-		<!-- ... existing code ... -->
 		<div id="content" class="app-content">
 			<!-- BEGIN page-header -->
 			<h1 class="page-header">יצירת אירוע
 				<small>צור אירוע חדש</small>
 			</h1>
 			<!-- END page-header -->
+
+			<!-- BEGIN fights panel -->
+			<div class="panel panel-inverse mb-4">
+				<div class="panel-heading d-flex align-items-center">
+					<h4 class="panel-title">קרבות מתוכננים</h4>
+					<div class="ms-auto">
+						<button class="btn btn-success btn-sm"><i class="fa fa-plus me-1"></i> הוסף קרב</button>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table table-hover align-middle mb-0">
+							<thead>
+								<tr>
+									<th style="width: 40px">#</th>
+									<th style="width: 45%">לוחם 1</th>
+									<th style="width: 45%">לוחם 2</th>
+									<th style="width: 100px">משקל</th>
+									<th style="width: 100px">סטטוס</th>
+									<th style="width: 120px">פעולות</th>
+									
+								</tr>
+							</thead>
+							<tbody class="fights-container">
+								<!-- Fight 1 -->
+								<tr class="cursor-move" data-fight-id="1">
+									<td class="text-center">1</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="../assets/img/user/user-1.jpg" alt="" class="rounded-circle me-2" width="32" />
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate">
+													<h6 class="mb-0 text-truncate">איתי אפרת</h6>
+													<small class="text-muted text-truncate">מכון אבטליון</small>
+												</div>
+												<div class="mt-1 small">
+													<span class="text-success"><i class="fas fa-check"></i> ביטוח</span> |
+													<span class="text-success"><i class="fas fa-check"></i> מאמן</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+										</div>
+									</td>
+
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="../assets/img/user/user-1.jpg" alt="" class="rounded-circle me-2" width="32" />
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate">
+													<h6 class="mb-0 text-truncate">חיים גוזלי</h6>
+													<small class="text-muted text-truncate">מכון הכח</small>
+												</div>
+												<div class="mt-1 small">
+													<span class="text-success"><i class="fas fa-check"></i> ביטוח</span> |
+													<span class="text-success"><i class="fas fa-check"></i> מאמן</span> |
+													<span class="text-success"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="badge bg-primary">66kg</span>
+									</td>
+									<td>
+										<span class="badge bg-success">מאושר</span>
+									</td>
+									<td>
+										<div class="d-flex gap-1 justify-content-end">
+											<button class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
+											<button class="btn btn-success btn-xs"><i class="fas fa-check"></i></button>
+											<button class="btn btn-danger btn-xs"><i class="fas fa-times"></i></button>
+											<button class="btn btn-info btn-xs"><i class="fas fa-print"></i></button>
+										</div>
+									</td>
+									
+									
+								</tr>
+
+								<!-- Fight 2 -->
+								<tr class="cursor-move" data-fight-id="2">
+									<td class="text-center">2</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="../assets/img/user/user-3.jpg" alt="" class="rounded-circle me-2" width="32" />
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate">
+													<h6 class="mb-0 text-truncate">רוני שוויקה</h6>
+													<small class="text-muted text-truncate">מכון אבטליון</small>
+												</div>
+												<div class="mt-1 small">
+													<span class="text-success"><i class="fas fa-check"></i> ביטוח</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> מאמן</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td class="text-center">
+										<span class="badge bg-primary">-66kg</span>
+									</td>
+									<td>
+										<div class="d-flex align-items-center justify-content-end">
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate text-end">
+													<h6 class="mb-0 text-truncate">מוטי מנדלוביץ</h6>
+													<small class="text-muted text-truncate">מכון הכח</small>
+												</div>
+												<div class="mt-1 small text-end">
+													<span class="text-success"><i class="fas fa-check"></i> ביטוח</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> מאמן</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+											<img src="../assets/img/user/user-4.jpg" alt="" class="rounded-circle ms-2" width="32" />
+										</div>
+									</td>
+									<td>
+										<div class="d-flex gap-1 justify-content-end">
+											<button class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
+											<button class="btn btn-success btn-xs"><i class="fas fa-check"></i></button>
+											<button class="btn btn-danger btn-xs"><i class="fas fa-times"></i></button>
+											<button class="btn btn-info btn-xs"><i class="fas fa-print"></i></button>
+										</div>
+									</td>
+									<td>
+										<span class="badge bg-warning">ממתין לאישור</span>
+									</td>
+								</tr>
+
+								<!-- Fight 3 -->
+								<tr class="cursor-move" data-fight-id="3">
+									<td class="text-center">3</td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="../assets/img/user/user-5.jpg" alt="" class="rounded-circle me-2" width="32" />
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate">
+													<h6 class="mb-0 text-truncate">רז אביב</h6>
+													<small class="text-muted text-truncate">מכון אבטליון</small>
+												</div>
+												<div class="mt-1 small">
+													<span class="text-danger"><i class="fas fa-times"></i> ביטוח</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> מאמן</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td class="text-center">
+										<span class="badge bg-primary">-73kg</span>
+									</td>
+									<td>
+										<div class="d-flex align-items-center justify-content-end">
+											<div class="flex-grow-1" style="min-width: 0;">
+												<div class="text-truncate text-end">
+													<h6 class="mb-0 text-truncate">דניאל כהן</h6>
+													<small class="text-muted text-truncate">מכון הכח</small>
+												</div>
+												<div class="mt-1 small text-end">
+													<span class="text-danger"><i class="fas fa-times"></i> ביטוח</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> מאמן</span> |
+													<span class="text-danger"><i class="fas fa-times"></i> הורים</span>
+												</div>
+											</div>
+											<img src="../assets/img/user/user-6.jpg" alt="" class="rounded-circle ms-2" width="32" />
+										</div>
+									</td>
+									<td>
+										<div class="d-flex gap-1 justify-content-end">
+											<button class="btn btn-primary btn-xs"><i class="fas fa-edit"></i></button>
+											<button class="btn btn-success btn-xs"><i class="fas fa-check"></i></button>
+											<button class="btn btn-danger btn-xs"><i class="fas fa-times"></i></button>
+											<button class="btn btn-info btn-xs"><i class="fas fa-print"></i></button>
+										</div>
+									</td>
+									<td>
+										<span class="badge bg-danger">נדחה</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- END fights panel -->
 
 			<!-- BEGIN panel -->
 			<div class="panel panel-inverse">
@@ -295,7 +479,6 @@
 								class="fa fa-times"></i></a>
 					</div> -->
 				</div>
-				<!-- ... existing code ... -->
 				<div class="panel-body">
 					<form dir="rtl">
 						<div class="row mb-15px">
@@ -331,60 +514,58 @@
 									required></textarea>
 							</div>
 						</div> -->
-					<div class="row mb-15px">
-						<label class="form-label col-form-label col-md-3">תאריך ושעה *</label>
-						<div class="col-md-9">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="mb-2 mb-md-0">
+						<div class="row mb-15px">
+							<label class="form-label col-form-label col-md-3">תאריך ושעה *</label>
+							<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="mb-2 mb-md-0">
 
-										<input type="date" class="form-control" required />
-										<small class="text-gray-500-darker">תאריך האירוע</small>
+											<input type="date" class="form-control" required />
+											<small class="text-gray-500-darker">תאריך האירוע</small>
+										</div>
 									</div>
-								</div>
-								<div class="col-md-6">
-									<div>
-										<input type="time" class="form-control" required />
-										<small class="text-gray-500-darker">שעת התחלה</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row mb-15px">
-						<label class="form-label col-form-label col-md-3">מספר קרבות *</label>
-						<div class="col-md-9">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="mb-2 mb-md-0">
-										<input type="number" class="form-control" min="1" placeholder="מספר מינימלי"
-											required />
-										<small class="text-gray-500-darker">מינימום קרבות</small>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div>
-										<input type="number" class="form-control" min="1" placeholder="מספר מקסימלי"
-											required />
-										<small class="text-gray-500-darker">מקסימום קרבות</small>
+									<div class="col-md-6">
+										<div>
+											<input type="time" class="form-control" required />
+											<small class="text-gray-500-darker">שעת התחלה</small>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-9 offset-md-3">
-							<button type="submit" class="btn btn-primary w-100px me-5px">צור אירוע</button>
-							<button type="reset" class="btn btn-default w-100px">נקה טופס</button>
+						<div class="row mb-15px">
+							<label class="form-label col-form-label col-md-3">מספר קרבות *</label>
+							<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="mb-2 mb-md-0">
+											<input type="number" class="form-control" min="1" placeholder="מספר מינימלי"
+												required />
+											<small class="text-gray-500-darker">מינימום קרבות</small>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div>
+											<input type="number" class="form-control" min="1" placeholder="מספר מקסימלי"
+												required />
+											<small class="text-gray-500-darker">מקסימום קרבות</small>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</form>
+						<div class="row">
+							<div class="col-md-9 offset-md-3">
+								<button type="submit" class="btn btn-primary w-100px me-5px">צור אירוע</button>
+								<button type="reset" class="btn btn-default w-100px">נקה טופס</button>
+							</div>
+						</div>
+					</form>
 				</div>
-				<!-- ... existing code ... -->
 			</div>
 			<!-- END panel -->
 		</div>
-		<!-- ... existing code ... -->
 		<!-- END #content -->
 
 		<!-- BEGIN theme-panel -->

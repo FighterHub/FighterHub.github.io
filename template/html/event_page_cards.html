@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+	<meta charset="utf-8" />
+	<title>פייטר האב - צור אירוע</title>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+	<!-- ================== BEGIN core-css ================== -->
+	<link href="../assets/css/vendor.min.css" rel="stylesheet" />
+	<link href="../assets/css/default/app-rtl.min.css" rel="stylesheet" />
+
+	<style type="text/css">
+		html {
+			font-size: 18px;
+		}
+	</style>
+	<!-- ================== END core-css ================== -->
+</head>
+
+<body>
+	<!-- BEGIN #loader -->
+	<div id="loader" class="app-loader">
+		<span class="spinner"></span>
+	</div>
+	<!-- END #loader -->
+
+	<!-- BEGIN #app -->
+	<div id="app" class="app app-header-fixed app-sidebar-fixed app-with-light-sidebar">
+		<!-- BEGIN #header -->
+		<div id="header" class="app-header">
+			<!-- BEGIN navbar-header -->
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">
+
+					<img src="../assets/img/fh.png" />&nbsp;
+					<b class="me-3px">FighterHub</b></a>
+				<button type="button" class="navbar-mobile-toggler" data-toggle="app-sidebar-mobile">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- END navbar-header -->
+			<!-- BEGIN header-nav -->
+			<div class="navbar-nav">
+				<div class="navbar-item navbar-form">
+
+				</div>
+				<div class="navbar-item dropdown">
+					<a href="#" data-bs-toggle="dropdown" class="navbar-link dropdown-toggle icon">
+						<i class="fa fa-bell"></i>
+						<span class="badge">5</span>
+					</a>
+					<div class="dropdown-menu media-list dropdown-menu-end">
+						<div class="dropdown-header">התראות (5)</div>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-bug media-object bg-gray-500"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">הצעה לקרב למתחרה שלך <i
+										class="fa fa-exclamation-circle text-danger"></i></h6>
+								<div class="text-muted fs-12px">חיים גוזלי רוצה להלחם באיתי אפרת</div>
+								<div class="text-muted fs-10px">לפני 3 דקות</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<img src="../assets/img/user/user-1.jpg" class="media-object" alt="" />
+								<i class="fab fa-facebook-messenger text-blue media-object-icon"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">רוני שוויקה יצר אירוע חדש</h6>
+								<p>האירוע יתקיים ב25.3.2029 בשעה 16:00</p>
+								<div class="text-muted fs-10px">לפני 25 דקות</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-plus media-object bg-gray-500"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading">מוטי מנדלוביץ נרשם כמתאמן במכון שלך</h6>
+								<div class="text-muted fs-10px">לפני 3 שעות</div>
+							</div>
+						</a>
+						<a href="javascript:;" class="dropdown-item media">
+							<div class="media-left">
+								<i class="fa fa-envelope media-object bg-gray-500"></i>
+								<i class="fab fa-google text-warning media-object-icon fs-14px"></i>
+							</div>
+							<div class="media-body">
+								<h6 class="media-heading"> רז אביב נרשם כמתאמן במכון שלך</h6>
+								<div class="text-muted fs-10px">לפני 3 שעות</div>
+							</div>
+						</a>
+						<div class="dropdown-footer text-center">
+							<a href="javascript:;" class="text-decoration-none">צפה בכל ההתראות</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="navbar-item navbar-user dropdown">
+					<a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+						<img src="../assets/img/user/avtalion2.jpg" alt="" />
+						<span>
+							<span class="d-none d-md-inline fw-bold">איתמר אבטליון</span>
+							<b class="caret"></b>
+						</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end me-1">
+						<a href="extra_profile.html" class="dropdown-item">Edit Profile</a>
+						<a href="email_inbox.html" class="dropdown-item d-flex align-items-center">
+							Inbox
+							<span class="badge bg-danger rounded-pill ms-auto pb-4px">2</span>
+						</a>
+						<a href="calendar.html" class="dropdown-item">Calendar</a>
+						<a href="extra_settings_page.html" class="dropdown-item">Settings</a>
+						<div class="dropdown-divider"></div>
+						<a href="login.html" class="dropdown-item">Log Out</a>
+					</div>
+				</div>
+			</div>
+			<!-- END header-nav -->
+		</div>
+		<!-- END #header -->
+
+		<!-- BEGIN #sidebar -->
+		<div id="sidebar" class="app-sidebar">
+			<!-- BEGIN scrollbar -->
+			<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+				<!-- BEGIN menu -->
+				<div class="menu">
+					<div class="menu-profile">
+						<a href="javascript:;" class="menu-profile-link" data-toggle="app-sidebar-profile"
+							data-target="#appSidebarProfileMenu">
+							<div class="menu-profile-cover with-shadow"></div>
+							<div class="menu-profile-image">
+								<img src="../assets/img/user/avtalion-logo.png" alt="" />
+							</div>
+							<div class="menu-profile-info">
+								<div class="d-flex align-items-center">
+									<div class="flex-grow-1">
+										אבטליון GYM
+									</div>
+									<div class="menu-caret ms-auto"></div>
+								</div>
+								<small>המסגר 5 נס ציונה</small>
+							</div>
+						</a>
+					</div>
+					<div id="appSidebarProfileMenu" class="collapse">
+						<div class="menu-item pt-5px">
+							<a href="javascript:;" class="menu-link">
+								<div class="menu-icon"><i class="fa fa-cog"></i></div>
+								<div class="menu-text">Settings</div>
+							</a>
+						</div>
+						<div class="menu-item">
+							<a href="javascript:;" class="menu-link">
+								<div class="menu-icon"><i class="fa fa-pencil-alt"></i></div>
+								<div class="menu-text"> Send Feedback</div>
+							</a>
+						</div>
+						<div class="menu-item pb-5px">
+							<a href="javascript:;" class="menu-link">
+								<div class="menu-icon"><i class="fa fa-question-circle"></i></div>
+								<div class="menu-text"> Helps</div>
+							</a>
+						</div>
+						<div class="menu-divider m-0"></div>
+					</div>
+					<div class="menu-header">Navigation</div>
+					<div class="menu-item">
+						<a href="javascript:;" class="menu-link">
+							<div class="menu-icon">
+								<i class="fa fa-sitemap"></i>
+							</div>
+							<div class="menu-text">דף הבית</div>
+						</a>
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="index.html" class="menu-link">
+									<div class="menu-text">Dashboard v1</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="index_v2.html" class="menu-link">
+									<div class="menu-text">Dashboard v2</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="index_v3.html" class="menu-link">
+									<div class="menu-text">Dashboard v3</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="menu-item has-sub">
+						<a href="javascript:;" class="menu-link">
+							<div class="menu-icon">
+								<i class="fa fa-microchip"></i>
+							</div>
+							<div class="menu-text">אירועים</div>
+							<div class="menu-caret"></div>
+						</a>
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="ai_chat.html" class="menu-link">
+									<div class="menu-text">האירועים שלך</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="create_event.html" class="menu-link">
+									<div class="menu-text">צור אירוע</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-item has-sub">
+						<a href="javascript:;" class="menu-link">
+							<div class="menu-icon">
+								<i class="fa fa-microchip"></i>
+							</div>
+							<div class="menu-text">מתחרים</div>
+							<div class="menu-caret"></div>
+						</a>
+						<div class="menu-submenu">
+							<div class="menu-item">
+								<a href="ai_chat.html" class="menu-link">
+									<div class="menu-text">המתחרים שלך</div>
+								</a>
+							</div>
+							<div class="menu-item">
+								<a href="ai_image_generator.html" class="menu-link">
+									<div class="menu-text">צור מתחרה</div>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="menu-item">
+						<a href="calendar.html" class="menu-link">
+							<div class="menu-icon">
+								<i class="fa fa-calendar"></i>
+							</div>
+							<div class="menu-text">לוח שנה</div>
+						</a>
+					</div>
+
+
+
+					<!-- BEGIN minify-button -->
+					<div class="menu-item d-flex">
+						<a href="javascript:;"
+							class="app-sidebar-minify-btn ms-auto d-flex align-items-center text-decoration-none"
+							data-toggle="app-sidebar-minify"><i class="fa fa-angle-double-left"></i></a>
+					</div>
+					<!-- END minify-button -->
+				</div>
+				<!-- END menu -->
+			</div>
+			<!-- END scrollbar -->
+		</div>
+		<div class="app-sidebar-bg" data-bs-theme="dark"></div>
+		<div class="app-sidebar-mobile-backdrop"><a href="#" data-dismiss="app-sidebar-mobile"
+				class="stretched-link"></a></div>
+		<!-- END #sidebar -->
+
+		<!-- BEGIN #content -->
+		<div id="content" class="app-content">
+			<!-- BEGIN page-header -->
+			<h1 class="page-header">
+				ליינאפ קרבות - אינטרקלאב 27.03.2025
+				<!-- <small>צור אירוע חדש</small> -->
+			</h1>
+			<!-- END page-header -->
+
+			<!-- BEGIN fights panel -->
+			<div class="panel panel-inverse mb-4">
+				<div class="panel-heading d-flex align-items-center">
+					<h4 class="panel-title">קרבות מתוכננים</h4>
+					<div class="ms-auto">
+						<button class="btn btn-success btn-sm"><i class="fa fa-plus me-1"></i> הוסף קרב</button>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div id="fights-container">
+								<!-- Fight Card 1 -->
+								<div class="mb-2 fight-card" data-fight-id="1">
+
+
+									<div class="card cursor-move">
+										<div class="card-body py-2">
+											<div class="d-flex align-items-center">
+												<span class="badge bg-primary me-2 fight-number">קרב 1</span>
+												<small class="text-muted me-2">משקל: 75 ק"ג</small>
+												<span class="badge bg-success ms-auto">מאושר</span>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
+													<img src="../assets/img/user/user-1.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<div class="">
+														<h6 class="mb-0 text-truncate">איתי אפרת</h6>
+														<small class="text-muted text-truncate">מכון אבטליון</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-success d-inline-block"><i
+																		class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
+															</button>
+															<div class="modal fade" id="documentsModal1" tabindex="-1">
+																<div class="modal-dialog">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<h5 class="modal-title">מסמכים - איתי אפרת
+																			</h5>
+																			<button type="button" class="btn-close"
+																				data-bs-dismiss="modal"></button>
+																		</div>
+																		<div class="modal-body">
+																			<ul>
+																				<li>
+																					<span class="text-success d-inline-block"><i
+																						class="fas fa-check"></i> 
+																					אישור ביטוחי																					
+																				</li>
+																				<li>
+																					<span class="text-success d-inline-block"><i
+																						class="fas fa-check"></i> 
+																					חתימת מאמן
+																					
+																				</li>
+																				<li>
+																					<span class="text-success d-inline-block"><i
+																						class="fas fa-check"></i> 
+																					אישור הורים
+																					
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="px-2">
+													<div class="text-danger fw-bold">VS</div>
+												</div>
+												<div class="flex-grow-1 d-flex align-items-center justify-content-end"
+													style="width: 0;">
+													<div class="text-truncate text-end">
+														<h6 class="mb-0 text-truncate">חיים גוזלי</h6>
+														<small class="text-muted text-truncate">מכון הכח</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-success d-inline-block text-decoration-hover-underline"><i class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
+																
+															</button>
+														</div>
+													</div>
+													<img src="../assets/img/user/user-2.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+												</div>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex justify-content-end gap-1">									
+												
+												<button class="btn btn-danger btn-xs" data-bs-toggle="modal" data-bs-target="#cancelFightModal"><i
+														class="fas fa-times"></i> בטל קרב </button>
+
+												<!-- Cancel Fight Modal -->
+												<div class="modal fade" id="cancelFightModal" tabindex="-1" aria-labelledby="cancelFightModalLabel" aria-hidden="true">
+													<div class="modal-dialog">
+														<div class="modal-content">
+															<div class="modal-header">
+																<h5 class="modal-title" id="cancelFightModalLabel">ביטול קרב</h5>
+																<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+															</div>
+															<div class="modal-body">
+																<p>הודעה תישלח למתאגרפים ולמאמנים עם סיבת הביטול.</p>
+																<div class="mb-3">
+																	<label for="cancelReason" class="form-label">סיבת הביטול:</label>
+																	<textarea class="form-control" id="cancelReason" rows="3" required></textarea>
+																</div>
+															</div>
+															<div class="modal-footer">
+																<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">הפסק ביטול</button>
+																<button type="button" class="btn btn-danger">המשך בביטול הקרב</button>
+															</div>
+														</div>
+													</div>
+												</div>
+										
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+
+								<!-- Fight Card 2 -->
+								<div class="mb-2 fight-card pt-4" data-fight-id="2">
+									<div class="card cursor-move">
+										<div class="card-body py-2">
+											<div class="d-flex align-items-center">
+												<span class="badge bg-primary me-2 fight-number">קרב 2</span>
+												<small class="text-muted me-2">משקל: 82 ק"ג</small>
+												<span class="badge bg-warning ms-auto">ממתין לאישורך</span>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
+													<img src="../assets/img/user/user-3.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<div class="text-truncate">
+														<h6 class="mb-0 text-truncate">אופיר פלד</h6>
+														<small class="text-muted text-truncate">מכון אבטליון</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-success d-inline-block"><i
+																		class="fas fa-check"></i> מסמכים ואישורים נשלחו</span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="px-2">
+													<div class="text-danger fw-bold">VS</div>
+												</div>
+												<div class="flex-grow-1 d-flex align-items-center justify-content-end"
+													style="width: 0;">
+													<div class="text-truncate text-end">
+														<h6 class="mb-0 text-truncate">מוטי מנדלוביץ</h6>
+														<small class="text-muted text-truncate">מכון הכח</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-success d-inline-block"><i
+																		class="fas fa-check"></i> מסמכים ואישורים נשלחו </span>
+															</button>
+														</div>
+													</div>
+													<img src="../assets/img/user/user-4.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+												</div>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex justify-content-end gap-1">
+												<button class="btn btn-success btn-xs"><i
+														class="fas fa-check"></i> אשר קרב</button>
+												<button class="btn btn-danger btn-xs"><i
+														class="fas fa-times"></i> דחה קרב</button>		
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Fight Card 3 -->
+								<div class="mb-2 fight-card pt-4" data-fight-id="3">
+									<div class="card cursor-move">
+										<div class="card-body py-2">
+											<div class="d-flex align-items-center">
+												<span class="badge bg-primary me-2 fight-number">קרב 3</span>
+												<small class="text-muted me-2">משקל: 70 ק"ג</small>
+												<span class="badge bg-danger ms-auto">נדחה</span>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
+													<img src="../assets/img/user/user-5.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<div class="text-truncate">
+														<h6 class="mb-0 text-truncate">רז אביב</h6>
+														<small class="text-muted text-truncate">מכון אבטליון</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-danger d-inline-block"><i
+																		class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="px-2">
+													<div class="text-danger fw-bold">VS</div>
+												</div>
+												<div class="flex-grow-1 d-flex align-items-center justify-content-end"
+													style="width: 0;">
+													<div class="text-truncate text-end">
+														<h6 class="mb-0 text-truncate">דניאל כהן</h6>
+														<small class="text-muted text-truncate">מכון הכח</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-success d-inline-block"><i
+																		class="fas fa-check"></i> מסמכים ואישורים נשלחו</span>
+															</button>
+														</div>
+													</div>
+													<img src="../assets/img/user/user-6.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+												</div>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex justify-content-end gap-1">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Fight Card 4 -->
+								<div class="mb-2 fight-card pt-4" data-fight-id="4">
+									<div class="card cursor-move">
+										<div class="card-body py-2">
+											<div class="d-flex align-items-center">
+												<span class="badge bg-primary me-2 fight-number">קרב 4</span>
+												<small class="text-muted me-2">משקל: 68 ק"ג</small>
+												<span class="badge bg-warning ms-auto">ממתין להשלמת פרטים</span>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex align-items-center">
+												<div class="flex-grow-1 d-flex align-items-center" style="width: 0;">
+													<img src="../assets/img/user/user-7.jpg" alt=""
+														class="rounded-circle me-2 flex-shrink-0" width="32" />
+													<div class="text-truncate">
+														<h6 class="mb-0 text-truncate">יוסי לוי</h6>
+														<small class="text-muted text-truncate">מכון אבטליון</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-danger d-inline-block"><i
+																	class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div class="px-2">
+													<div class="text-danger fw-bold">VS</div>
+												</div>
+												<div class="flex-grow-1 d-flex align-items-center justify-content-end"
+													style="width: 0;">
+													<div class="text-truncate text-end">
+														<h6 class="mb-0 text-truncate">אבי שמעוני</h6>
+														<small class="text-muted text-truncate">מכון הכח</small>
+														<div class="mt-1">
+															<button type="button" class="btn btn-link btn-xs p-0"
+																data-bs-toggle="modal"
+																data-bs-target="#documentsModal1">
+																<span class="text-danger d-inline-block"><i
+																	class="fas fa-check"></i>מסמכים \ אישורים חסרים </span>
+															</button>
+														</div>
+													</div>
+													<img src="../assets/img/user/user-8.jpg" alt=""
+														class="rounded-circle ms-2 flex-shrink-0" width="32" />
+												</div>
+											</div>
+											<hr class="my-2">
+											<div class="d-flex justify-content-end gap-1">
+												<button class="btn btn-success btn-xs"><i
+														class="fas fa-envelope"></i> שלח תזכורת</button>
+												<button class="btn btn-danger btn-xs"><i
+														class="fas fa-times"></i> דחה קרב</button>		
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END fights panel -->
+
+
+		</div>
+		<!-- END #content -->
+
+		<!-- BEGIN scroll-top-btn -->
+		<a href="javascript:;" class="btn btn-icon btn-circle btn-theme btn-scroll-to-top"
+			data-toggle="scroll-to-top"><i class="fa fa-angle-up"></i></a>
+		<!-- END scroll-top-btn -->
+	</div>
+	<!-- END #app -->
+
+	<!-- ================== BEGIN core-js ================== -->
+	<script src="../assets/js/vendor.min.js"></script>
+	<script src="../assets/js/app.min.js"></script>
+	<!-- ================== END core-js ================== -->
+
+	<!-- ================== BEGIN page-js ================== -->
+	<script src="../assets/plugins/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<script src="../assets/js/demo/render.highlight.js"></script>
+	<!-- ================== END page-js ================== -->
+</body>
+
+</html>
