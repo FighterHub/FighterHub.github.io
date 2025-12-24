@@ -71,7 +71,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1 data-i18n="hero.title">Connect, Compete, Conquer</h1>
+                    <h1 data-i18n="hero.title">Digitizing The Fight World</h1>
                     <p class="lead" data-i18n="hero.subtitle">The ultimate platform for fighters, coaches, and promoters.
                         Manage tournaments and interclubs, finding opponents, connect with coaches. Everything you need to succeed in your fighting career.
                     </p>
@@ -271,7 +271,7 @@
                     getStarted: "Get Started"
                 },
                 hero: {
-                    title: "Connect, Compete, Conquer",
+                    title: "Digitizing The Fight World",
                     subtitle: "The ultimate platform for fighters, coaches, and promoters. Manage tournaments and interclubs, finding opponents, connect with coaches. Everything you need to succeed in your fighting career.",
                     startTrial: "Start Free Trial",
                     learnMore: "Learn More"
@@ -373,7 +373,7 @@
                     getStarted: "התחל עכשיו"
                 },
                 hero: {
-                    title: "התחבר, התחרה, נצח",
+                    title: "מחשוב עולם הלחימה",
                     subtitle: "הפלטפורמה המובילה ללוחמים, מאמנים ומארגנים. מצא יריבים, נהל אירועים וקח את הקריירה שלך לשלב הבא.",
                     startTrial: "התחל ניסיון חינם",
                     learnMore: "למד עוד"
@@ -469,18 +469,14 @@
             }
         };
 
-        // Get language from URL parameter or browser
+        // Get language from URL parameter, default to English
         function getLanguage() {
             const urlParams = new URLSearchParams(window.location.search);
             const langParam = urlParams.get('lang');
             if (langParam && (langParam === 'he' || langParam === 'en')) {
                 return langParam;
             }
-            // Check browser language
-            const browserLang = navigator.language || navigator.userLanguage;
-            if (browserLang.startsWith('he')) {
-                return 'he';
-            }
+            // Always default to English regardless of browser language
             return 'en';
         }
 
